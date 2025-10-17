@@ -14,8 +14,8 @@
       <div class="heading">
         <h1>2048</h1>
         <div class="counterContainer">
-          <div clas>Count <span class="currentScore">1</span></div>
-          <div>Best <span class="bestScore">1</span></div>
+          <div clas>Count <span class="currentScore">0</span></div>
+          <div>Best <span class="bestScore">0</span></div>
         </div>
       </div>
       <div class="newGame-container">
@@ -48,12 +48,12 @@
             <div class="cell"></div>
           </div>
         </div>
-        <div class="gameCells">
-          <div class="cellGame c-2">2</div>
+        <div class="gameCells"></div>
+        <div class="gameOver">
+          <p>Game over your score: <span id="overScore"></span></p>
+          <button id="retry">Retry</button>
         </div>
-
       </div>
-
     </div>
   </div>
   <script type="module" src="/src/main.js"></script>

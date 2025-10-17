@@ -95,12 +95,6 @@ button:focus-visible {
   }
 }
 
-.game {
-  height: 1000px;
-  width: 500px;
-}
-
-
 .heading {
   display: flex;
   flex-direction: row;
@@ -146,12 +140,14 @@ button:focus-visible {
   grid-template-rows: repeat(4, 1fr);
   gap: 10px;
   padding: 10px;
+  z-index: 1;
 }
 
 .gameCells {
   position: absolute;
   width: 430px;
   height: 430px;
+  z-index: 2;
 }
 
 .row {
@@ -164,6 +160,7 @@ button:focus-visible {
   width: 100px;
   height: 100px;
   background-color: rgb(134, 124, 113);
+  border-radius: 10px;
 }
 
 .cellGame {
@@ -173,4 +170,18 @@ button:focus-visible {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 25px;
+  border-radius: 10px;
+}
+
+.gameOver {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 3;
+  width: 430px;
+  height: 430px;
+  background-color: rgba(119, 110, 101, 0.5);
 }
