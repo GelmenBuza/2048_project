@@ -1,0 +1,2 @@
+live:
+	npm run dev

@@ -94,3 +94,83 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.game {
+  height: 1000px;
+  width: 500px;
+}
+
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.counterContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.counterContainer > div {
+  background-color: rgb(119, 110, 101);
+  padding: 0 20px;
+  border-radius: 8px;
+}
+
+.newGame-container {
+  padding-bottom: 50px;
+}
+
+.newGame {
+  border: none;
+  cursor: pointer;
+  background-color: rgb(119, 110, 101);
+}
+
+.gamePalce {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 450px;
+}
+
+.gameBack {
+  position: absolute;
+  display: grid;
+  background-color: rgb(119, 110, 101);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.gameCells {
+  position: absolute;
+  width: 430px;
+  height: 430px;
+}
+
+.row {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(134, 124, 113);
+}
+
+.cellGame {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
